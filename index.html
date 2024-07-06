@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="create-quiz-nav">Create Quiz</a></li>
+            <li><a href="#" id="take-quiz-nav">Take Quiz</a></li>
+        </ul>
+    </nav>
+
+    <section id="create-quiz-section">
+        <h1>Create Quiz</h1>
+        <form id="quiz-form">
+            <div class="question-block">
+                <label for="question">Question:</label>
+                <input type="text" name="question" required>
+                <label for="option1">Option 1:</label>
+                <input type="text" name="option1" required>
+                <label for="option2">Option 2:</label>
+                <input type="text" name="option2" required>
+                <label for="option3">Option 3:</label>
+                <input type="text" name="option3" required>
+                <label for="option4">Option 4:</label>
+                <input type="text" name="option4" required>
+                <label for="correct-option">Correct Option:</label>
+                <select name="correct-option" required>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+            <button type="button" id="add-question">Add Question</button>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <section id="take-quiz-section">
+        <h1>Take Quiz</h1>
+        <div id="quiz-container"></div>
+        <button id="fetch-quiz">Take Quiz</button>
+        <button id="submit-quiz" style="display:none;">Submit Quiz</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
